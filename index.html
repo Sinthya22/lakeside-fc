@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakeside FC | Recreational Youth Soccer in Etobicoke</title>
+  <meta
+    name="description"
+    content="Lakeside FC is a recreational youth soccer club in Etobicoke, Ontario, training at Centennial Park. Programs for ages 6 to 15."
+  />
+  <meta name="theme-color" content="#10432B" />
+
+  <!-- Favicons: SVG for modern browsers, PNG fallback, and Apple home screen icon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+
+  <!-- Font: Manrope from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <!-- Skip link for keyboard and screen reader users -->
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+  <!-- ==========================================================
+       HEADER / NAVIGATION
+       ========================================================== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <!-- Brand: crest + club name + tagline -->
+      <a class="brand" href="#home" aria-label="Lakeside FC home">
+        <img class="brand-logo" src="assets/images/logo.svg" alt="Lakeside FC crest" width="78" height="96" />
+        <span class="brand-text">
+          <span class="brand-name">Lakeside FC</span>
+          <span class="brand-tagline" data-i18n="tagline">Play. Grow. Belong.</span>
+        </span>
+      </a>
+
+      <!-- Mobile menu toggle (hidden on desktop) -->
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+      </button>
+
+      <!-- Primary navigation -->
+      <nav class="primary-nav" id="primary-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a class="nav-link is-active" href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+          <li><a class="nav-link" href="#programs" data-i18n="nav.programs">Programs</a></li>
+          <li><a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <!-- Language switcher (EN / ES) -->
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ==========================================================
+         HERO
+         ========================================================== -->
+    <!-- The background image (assets/images/hero-banner.jpg) is set in css/styles.css -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span data-i18n="hero.titleLead">Welcome to</span>
+            <span class="text-gold">Lakeside FC</span>
+          </h1>
+          <p class="hero-text" data-i18n="hero.text">
+            Where young athletes in Etobicoke discover their potential, build friendships, and fall in love
+            with the beautiful game — training at Centennial Park.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold js-register" href="#contact">
+              <span data-i18n="buttons.register">Register Now</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a class="btn btn-outline-light" href="#programs" data-i18n="buttons.viewPrograms">View Programs</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         WHY CHOOSE LAKESIDE FC? (About)
+         ========================================================== -->
+    <section class="section section-mint section-after-hero" id="about">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" data-i18n="why.title">Why Choose Lakeside FC?</h2>
+          <p class="section-intro" data-i18n="why.intro">
+            We're a friendly recreational club dedicated to helping every young athlete enjoy the game, make
+            friends, and grow at their own pace.
+          </p>
+        </header>
+
+        <div class="feature-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z" /><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4" /></svg>
+            </span>
+            <h3 class="feature-title" data-i18n="why.card1.title">Friendly Coaches</h3>
+            <p class="feature-text" data-i18n="why.card1.text">
+              Caring, experienced coaches who make every kid feel welcome on the field.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20a6.5 6.5 0 0 1 13 0" /><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14a6.5 6.5 0 0 1 3 6" /></svg>
+            </span>
+            <h3 class="feature-title" data-i18n="why.card2.title">Community Spirit</h3>
+            <p class="feature-text" data-i18n="why.card2.text">
+              A friendly club where kids make friends and learn to play together.
+            </p>
+          </article>
+
+          <!-- Card 3 (gold accent) -->
+          <article class="feature-card feature-card-gold">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-8-4.6-8-10.4A4.6 4.6 0 0 1 12 7a4.6 4.6 0 0 1 8 3.1c0 5.8-8 10.4-8 10.4z" /></svg>
+            </span>
+            <h3 class="feature-title" data-i18n="why.card3.title">Fun Comes First</h3>
+            <p class="feature-text" data-i18n="why.card3.text">
+              A relaxed, positive environment where kids love to learn and play.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="feature-card">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16" /><path d="M7 20v-5M12 20V10M17 20V5" /></svg>
+            </span>
+            <h3 class="feature-title" data-i18n="why.card4.title">Growing at Their Own Pace</h3>
+            <p class="feature-text" data-i18n="why.card4.text">
+              Age-appropriate activities that build confidence, one game at a time.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PROGRAMS FOR EVERY AGE
+         ========================================================== -->
+    <section class="section" id="programs">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title" data-i18n="programs.title">Programs for Every Age</h2>
+          <p class="section-intro" data-i18n="programs.intro">
+            From first kicks to recreational league play — there's a Lakeside FC program for every child.
+          </p>
+        </header>
+
+        <div class="program-grid">
+          <!-- Program 1 -->
+          <article class="program-card" id="program-academy">
+            <header class="program-head program-head-1">
+              <h3 class="program-name">Lakeside Academy</h3>
+              <p class="program-ages" data-i18n="programs.p1.ages">Ages 6-8</p>
+            </header>
+            <div class="program-body">
+              <p data-i18n="programs.p1.text">
+                Introduction to soccer through fun games and basic skills. Focus on coordination, following
+                instructions, and making friends.
+              </p>
+              <ul class="program-list">
+                <li data-i18n="programs.p1.item1">45-minute sessions</li>
+                <li data-i18n="programs.p1.item2">Small group activities</li>
+                <li data-i18n="programs.p1.item3">Parent participation welcome</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Program 2 -->
+          <article class="program-card" id="program-strikers">
+            <header class="program-head program-head-2">
+              <h3 class="program-name">Lakeside Strikers</h3>
+              <p class="program-ages" data-i18n="programs.p2.ages">Ages 9-12</p>
+            </header>
+            <div class="program-body">
+              <p data-i18n="programs.p2.text">
+                Developing technical skills and understanding of the game. Introduction to positions and basic
+                tactics.
+              </p>
+              <ul class="program-list">
+                <li data-i18n="programs.p2.item1">60-minute training sessions</li>
+                <li data-i18n="programs.p2.item2">Friendly matches</li>
+                <li data-i18n="programs.p2.item3">Skills challenges and tournaments</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Program 3 -->
+          <article class="program-card" id="program-elite">
+            <header class="program-head program-head-3">
+              <h3 class="program-name">Lakeside FC Elite</h3>
+              <p class="program-ages" data-i18n="programs.p3.ages">Ages 13-15</p>
+            </header>
+            <div class="program-body">
+              <p data-i18n="programs.p3.text">
+                Advanced training and competitive play. Focus on teamwork, strategy, and preparing for high
+                school soccer.
+              </p>
+              <ul class="program-list">
+                <li data-i18n="programs.p3.item1">90-minute training sessions</li>
+                <li data-i18n="programs.p3.item2">League competitions</li>
+                <li data-i18n="programs.p3.item3">Leadership development</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CALL TO ACTION
+         ========================================================== -->
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2 class="cta-title" data-i18n="cta.title">Ready to Join the Lakeside FC Family?</h2>
+        <p class="cta-text" data-i18n="cta.text">
+          Registration is now open! Fill out the form below and we'll get back to you soon.
+        </p>
+        <a class="btn btn-gold js-register" href="#contact">
+          <span data-i18n="buttons.register">Register Now</span>
+          <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================
+       FOOTER (also holds the contact information and form)
+       ========================================================== -->
+  <!-- The background image (assets/images/footer-bg.jpg) is set in css/styles.css -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <!-- Column 1: crest, tagline and about text -->
+      <div class="footer-col footer-about">
+        <a class="footer-brand" href="#home">
+          <img src="assets/images/logo.svg" alt="Lakeside FC crest" width="96" height="118" />
+          <span>
+            <span class="footer-brand-name">Lakeside FC</span>
+            <span class="footer-brand-tagline" data-i18n="tagline">Play. Grow. Belong.</span>
+          </span>
+        </a>
+        <p data-i18n="footer.about">
+          A recreational youth soccer club training at Centennial Park, Etobicoke, since 2024.
+        </p>
+      </div>
+
+      <!-- Column 2: programs and contact details -->
+      <div class="footer-col">
+        <h3 class="footer-heading" data-i18n="footer.programsTitle">Our Programs</h3>
+        <ul class="footer-links">
+          <li><a href="#program-academy" data-i18n="footer.link1">Lakeside Academy (Ages 6-8)</a></li>
+          <li><a href="#program-strikers" data-i18n="footer.link2">Lakeside Strikers (Ages 9-12)</a></li>
+          <li><a href="#program-elite" data-i18n="footer.link3">Lakeside FC Elite (Ages 13-15)</a></li>
+        </ul>
+
+        <h3 class="footer-heading" data-i18n="footer.contactTitle">Contact</h3>
+        <ul class="contact-list">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+            <address>256 Centennial Park Rd<br />Etobicoke, ON M9C 5N3</address>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="M3 7l9 6 9-6" /></svg>
+            <a href="mailto:info@lakesidefc.ca">info@lakesidefc.ca</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: "Get in Touch" form -->
+      <div class="footer-col footer-form-col">
+        <h3 class="footer-heading" data-i18n="form.title">Get in Touch</h3>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="first-name" data-i18n="form.firstName">First Name</label>
+              <input id="first-name" name="firstName" type="text" autocomplete="given-name" required />
+            </div>
+            <div class="form-field">
+              <label for="last-name" data-i18n="form.lastName">Last Name</label>
+              <input id="last-name" name="lastName" type="text" autocomplete="family-name" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="form.email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="message" data-i18n="form.message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="btn btn-gold btn-block" type="submit" data-i18n="form.submit">Submit</button>
+          <!-- Success / error messages are written here by js/main.js -->
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer.copyright">© 2026 Lakeside FC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: translations must load before main.js -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
